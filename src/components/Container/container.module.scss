@@ -1,0 +1,8 @@
+@import '~css/variables';
+
+
+.container {
+   $container-max-width: 960px;
+   margin-left: $margin;
+   margin-right: $margin;
+}

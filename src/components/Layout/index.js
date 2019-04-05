@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 
 // Components
 import Header from 'components/Header'
+import Container from 'components/Container'
 
 const Layout = ({
   children
@@ -11,7 +12,9 @@ const Layout = ({
   return (
     <Fragment>
       <Header />
-      {children}
+      <Container>
+        {children}
+      </Container>
     </Fragment>
   )
 }

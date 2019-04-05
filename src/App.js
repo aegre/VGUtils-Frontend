@@ -5,6 +5,7 @@ import React, { Component } from 'react'
 import Layout from 'components/Layout'
 import EventList from 'views/EventList'
 
+import './css/index.scss'
 class App extends Component {
   render () {
     return (

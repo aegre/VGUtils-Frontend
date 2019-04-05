@@ -1,0 +1,59 @@
+
+
+$padding: 1.8rem;
+
+// GRID SYSTEM VARIABLES
+$xs-breakpoint: 482px;
+$sm-breakpoint: 768px;
+$md-breakpoint: 1024px;
+$lg-breakpoint: 1440px;
+
+$breakpoints: (
+  xs: $xs-breakpoint,
+  sm: $sm-breakpoint,
+  md: $md-breakpoint,
+  lg: $lg-breakpoint
+);
+
+$container-max-width: 960px;
+$jumbo-container-max-width: 670px;
+$page-content-max-width: 520px;
+
+// Color variables
+$dark-gray: #343a40;
+$celeste: #02cbe3;
+$light-gray: #c3c3c3;
+$white: #ffffff;
+$red: #ff0000;
+$error: #b6061b;
+$orient-blue: #00548b;
+$sky-blue: #46b0f2;
+$disabled: #f0f0f0;
+$dark: #1b2428;
+$black: #000000;
+$gray: #898989;
+$border-color: #979797;
+$background-gray: #f5f7fa;
+
+$colors: (
+  'black': $black,
+  'sky-blue': $sky-blue,
+  'red': $red,
+  'white': $white,
+  'dark': $dark,
+  'gray': $gray,
+  'dark-gray': $dark-gray,
+  'light-gray': $light-gray,
+  'transparent': transparent,
+  'disabled': $disabled,
+  'orient': $orient-blue,
+  'error': $error
+);
+
+// GENERAL SIZES
+$top-bar-height: 68px;
+$margin: 2.5rem;
+$margin_large: 2.375rem;
+$margin_medium: 2rem;
+$margin_small: 1.5rem;
+$footer-height: 181px;

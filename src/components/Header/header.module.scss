@@ -1,9 +1,11 @@
+@import '~css/variables';
+
 .header {
-  background: black;
+  background: $dark-gray;
   color: white;
-  height: 60px;
+  height: 100px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;  
+  width: 100%;
+  box-sizing: border-box;
 }
