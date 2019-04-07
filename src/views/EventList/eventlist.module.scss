@@ -2,17 +2,10 @@
 .eventlist {
   .list {
     list-style-type: none;
-    li:first-child {
-      > div {
-        border-top-right-radius: $border-radius;
-        border-top-left-radius: $border-radius;
-      }
-    }
-    li:last-child {
-      > div {
-        border-bottom-right-radius: $border-radius;
-        border-bottom-left-radius: $border-radius;
-      }
-    }
+    border-radius: $border-radius;
+    overflow: auto;
+    height: 60vh;
+    box-shadow: $box-shadow-1;
+    background: white;
   }
 }

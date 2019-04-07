@@ -34,7 +34,7 @@ Card.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node.isRequired,
   paddingless: PropTypes.bool,
-  level: PropTypes.oneOf([1, 2, 3])
+  level: PropTypes.oneOf([0, 1, 2, 3])
 }
 
 export default Card
