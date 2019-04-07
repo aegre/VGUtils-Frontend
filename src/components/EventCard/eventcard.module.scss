@@ -1,6 +1,8 @@
 @import '~css/variables';
 
 $event-card-border: 8px;
+$event-card-height: 120px;
+$event-card-height-big: 180px;
 
 .eventcard {
   border-left: solid $event-card-border red;
@@ -8,17 +10,22 @@ $event-card-border: 8px;
   border-radius: 0;
   display: flex;
   flex-direction: row;
-  height: 120px;
+  height: $event-card-height;
   padding: $margin_small/2 0;
   width: calc(100% - #{$event-card-border});
+
+  @media screen and (max-width: $xs-breakpoint) {
+    height: $event-card-height-big;
+  }
   &:hover {
     background-color: darken(#FFFFFF, 5);
     border-left: solid $event-card-border darken(red, 10);
   }
   .image_container {
+    
     box-shadow: $box-shadow-2;
-    width: 120px;
-    height: 120px;
+    width: $event-card-height;
+    height: $event-card-height;
     margin: 0 $margin_small/2;
     img {
       height: 150%;
@@ -28,6 +35,16 @@ $event-card-border: 8px;
     }
     border-radius: 50%;
     overflow: hidden;
+    @media screen and (max-width: $sm-breakpoint) {
+      width: 80px;
+      height: 80px;
+      min-width: 80px;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    @media screen and (max-width: $xs-breakpoint) {
+      display: none;
+    }
   }
   .content {
     padding: $margin_small/2 $margin_small/2;

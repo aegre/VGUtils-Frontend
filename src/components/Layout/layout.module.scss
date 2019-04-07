@@ -1,6 +1,6 @@
 @import '~css/variables';
 
 .main_content {
-  padding-top: calc(#{$top-bar-height} + #{$margin-small});
+  padding-top: $margin_small;
   padding-bottom: $margin-small;
 }
