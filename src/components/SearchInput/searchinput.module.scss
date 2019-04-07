@@ -1,0 +1,8 @@
+@import '~css/variables';
+
+.searchinput {
+  margin: $margin 0;
+  input {
+    box-shadow: $box-shadow-1;
+  }
+}

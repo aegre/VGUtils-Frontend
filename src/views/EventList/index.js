@@ -5,11 +5,13 @@ import React, { Component } from 'react'
 import API from 'API'
 import EventCard from 'components/EventCard'
 import styles from './eventlist.module.scss'
+import SearchInput from 'components/SearchInput'
 
 class EventListView extends Component {
   state = {
     events: [],
-    isLoading: false
+    isLoading: false,
+    search: ''
   }
 
   componentDidMount () {
@@ -26,16 +28,27 @@ class EventListView extends Component {
     }
   }
 
+  handleSearch = (search) => {
+    this.setState({ search })
+  }
+
   render () {
-    const { isLoading, events } = this.state
+    const { isLoading, events, search } = this.state
     return (
       <section className={styles.eventlist}>
-        <h1 className='text-center'>Lista de eventos</h1>
-
+        <h1 className='text-center'>Eventos</h1>
+        <SearchInput onChange={this.handleSearch} id='event-list-search' />
         { isLoading && <h3>Espera un momento...</h3> }
         <ul className={styles.list}>
           {
-            events.map((event) => (
+
+            events.filter(event => (
+              search
+                ? event.title.toLowerCase().includes(search.toLowerCase()) && event
+                : event
+            )
+
+            ).map((event) => (
               <li key={event._id}>
                 <EventCard {...event} />
               </li>

@@ -1,0 +1,10 @@
+@import '~css/variables';
+
+.input {
+  width: 100%;
+  input {
+    border-radius: $border-radius;
+    width: 100%;
+    padding: .5rem;
+  }
+}
