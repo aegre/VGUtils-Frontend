@@ -1,16 +1,19 @@
 @import '~css/variables';
 
+$event-card-border: 8px;
+
 .eventcard {
-  border-left: solid 8px red;
+  border-left: solid $event-card-border red;
   box-sizing: content-box;
   border-radius: 0;
   display: flex;
   flex-direction: row;
   height: 120px;
   padding: $margin_small/2 0;
+  width: calc(100% - #{$event-card-border});
   &:hover {
     background-color: darken(#FFFFFF, 5);
-    border-left: solid 8px darken(red, 10);
+    border-left: solid $event-card-border darken(red, 10);
   }
   .image_container {
     box-shadow: $box-shadow-2;
@@ -28,5 +31,9 @@
   }
   .content {
     padding: $margin_small/2 $margin_small/2;
+  }
+  .link {
+    color: initial;
+    text-decoration: none;
   }
 }
