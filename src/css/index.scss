@@ -2,11 +2,13 @@
 @import './lib/odyssey.scss';
 @import './variables';
 @import './utils/text';
+@import './utils/margin';
+
 * {
   font-family: $font-family;
   box-sizing: border-box;
 }
 
-#root {
+body {
   background: $background-gray;
 }

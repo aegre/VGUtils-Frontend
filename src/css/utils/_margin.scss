@@ -1,0 +1,41 @@
+@import '~css/variables';
+
+.margin {
+  &-bottom {
+    margin-bottom: $margin;
+    &-small {
+      margin-bottom: $margin_small;
+    }
+    &-medium {
+      margin-bottom: $margin_medium;
+    }
+    &-large {
+      margin-bottom: $margin-large;
+    }
+    &-none {
+      margin-bottom: 0;
+    }
+  }
+  &-top {
+    margin-top: $margin;
+    &-small {
+      margin-top: $margin_small;
+    }
+    &-medium {
+      margin-top: $margin_medium;
+    }
+    &-large {
+      margin-top: $margin-large;
+    }
+    &-none {
+      margin-top: 0;
+    }
+  }
+  &-auto {
+    margin: auto;
+  }
+}
+
+.margin-auto {
+  margin: auto;
+}

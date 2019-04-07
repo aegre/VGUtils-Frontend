@@ -16,7 +16,7 @@ const Layout = ({
       <Container className={styles.main_content}>
         {children}
       </Container>
-      <p className='text-light text-center'>VagabundosMx 2019.</p>
+      <p className='text-light text-center margin-top-small margin-bottom-small'>VagabundosMx 2019.</p>
     </Fragment>
   )
 }
