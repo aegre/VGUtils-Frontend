@@ -26,10 +26,9 @@ class EventListView extends Component {
 
   render () {
     const { isLoading, events } = this.state
-    console.log(events)
     return (
       <section>
-        <h1>Lista de eventos</h1>
+        <h1 className='text-center'>Lista de eventos</h1>
         { isLoading && <h3>Espera un momento...</h3> }
         <ul>
           {

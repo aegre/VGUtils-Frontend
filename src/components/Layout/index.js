@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 // Components
 import Header from 'components/Header'
 import Container from 'components/Container'
+import styles from './layout.module.scss'
 
 const Layout = ({
   children
@@ -12,7 +13,7 @@ const Layout = ({
   return (
     <Fragment>
       <Header />
-      <Container>
+      <Container className={styles.main_content}>
         {children}
       </Container>
     </Fragment>

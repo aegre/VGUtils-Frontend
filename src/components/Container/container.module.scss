@@ -2,7 +2,11 @@
 
 
 .container {
-   $container-max-width: 960px;
-   margin-left: $margin;
-   margin-right: $margin;
+   max-width: $container-max-width;
+   width: 100%;
+   padding-left: $margin;
+   padding-right: $margin;
+   margin: 0 auto;
+   width: 100vw;
+   box-sizing: border-box;
 }

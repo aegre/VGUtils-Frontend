@@ -1,5 +1,6 @@
 // Libraries
 import React, { Component } from 'react'
+import { BrowserRouter } from 'react-router-dom'
 
 // Components
 import Layout from 'components/Layout'
@@ -9,9 +10,11 @@ import './css/index.scss'
 class App extends Component {
   render () {
     return (
-      <Layout>
-        <EventList />
-      </Layout>
+      <BrowserRouter>
+        <Layout>
+          <EventList />
+        </Layout>
+      </BrowserRouter>
     )
   }
 }

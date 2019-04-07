@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
 @import './lib/odyssey.scss';
 @import './variables';
+@import './utils/text';
+* {
+  font-family: $font-family;
+  box-sizing: border-box;
+}
 
+#root {
+  background: $background-gray;
+}

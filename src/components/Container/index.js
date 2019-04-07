@@ -9,11 +9,13 @@ import styles from './container.module.scss'
 
 const Container = ({
   fluid,
-  children
+  children,
+  className
 }) => {
   return (
     <div className={classNames(styles.container, {
-      [styles.fluid]: fluid
+      [styles.fluid]: fluid,
+      [className]: !!className
     })}>
       {children}
     </div>
@@ -21,12 +23,14 @@ const Container = ({
 }
 
 Container.defaultProps = {
-  children: null
+  children: null,
+  className: ''
 }
 
 Container.propTypes = {
   fluid: PropTypes.string,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string
 }
 
 export default Container

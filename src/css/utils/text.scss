@@ -1,0 +1,79 @@
+@import '~css/variables';
+
+body,
+input,
+textarea,
+select,
+button {
+  color: $dark-gray;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  @media screen and (max-width: $xs-breakpoint) {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  @media screen and (max-width: $xs-breakpoint) {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  @media screen and (max-width: $xs-breakpoint) {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 3.25rem;
+  @media screen and (max-width: $xs-breakpoint) {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+}
+
+.text- {
+  &center {
+    text-align: center;
+  }
+  &smallest {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+  &small {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+  &underline {
+    text-decoration: underline;
+  }
+  &bold {
+    font-weight: 600;
+  }
+  &light {
+    font-weight: 500;
+  }
+  &normal {
+    font-weight: normal;
+  }
+  &uppercase {
+    text-transform: uppercase;
+  }
+  &break-all {
+    word-break: break-all;
+  }
+}

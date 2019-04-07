@@ -1,11 +1,25 @@
 @import '~css/variables';
 
 .header {
-  background: $dark-gray;
+  background: white;
   color: white;
-  height: 100px;
+  height: $top-bar-height;
   display: flex;
   align-items: center;
   width: 100%;
   box-sizing: border-box;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: fixed;
+  box-shadow: $box-shadow-1;
+  .logo {
+    height: 80px;
+    width: auto;
+  }
+  .container {
+    height: $top-bar-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
