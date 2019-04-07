@@ -1,0 +1,22 @@
+@import '~css/variables';
+
+.card {
+  background: white;
+  width: 100%;
+  padding: $margin-small; 
+  border-radius: .5rem;
+}
+
+.paddingless {
+  padding: 0;
+}
+.level_1 {
+  box-shadow: $box-shadow-1;
+}
+.level_2 {
+  color: red;
+  box-shadow: $box-shadow-2;
+}
+.level_3 {
+  box-shadow: $box-shadow-3;
+}

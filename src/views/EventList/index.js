@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 
 // Componentsç
 import API from 'API'
+import EventCard from 'components/EventCard'
+import styles from './eventlist.module.scss'
 
 class EventListView extends Component {
   state = {
@@ -27,20 +29,15 @@ class EventListView extends Component {
   render () {
     const { isLoading, events } = this.state
     return (
-      <section>
+      <section className={styles.eventlist}>
         <h1 className='text-center'>Lista de eventos</h1>
+
         { isLoading && <h3>Espera un momento...</h3> }
-        <ul>
+        <ul className={styles.list}>
           {
-            events.map(({
-              _id,
-              title,
-              eventDate
-            }) => (
-              <li key={_id}>
-                {
-                  `${title} - ${eventDate}`
-                }
+            events.map((event) => (
+              <li key={event._id}>
+                <EventCard {...event} />
               </li>
             ))
           }
