@@ -22,18 +22,17 @@ $event-card-height-big: 180px;
     border-left: solid $event-card-border darken(red, 10);
   }
   .image_container {
-    
-    box-shadow: $box-shadow-2;
-    width: $event-card-height;
-    height: $event-card-height;
-    margin: 0 $margin_small/2;
+    position: relative;
+    top: -$margin_small/2;
+    width: calc(#{$event-card-height} + #{$margin_small});
+    height: calc(#{$event-card-height} + #{$margin_small});
+    margin-right: $margin_small/2;
     img {
       height: 150%;
-      width: auto;
+      width: 100%;
       object-fit: cover;
       background-size: cover;
     }
-    border-radius: 50%;
     overflow: hidden;
     @media screen and (max-width: $sm-breakpoint) {
       width: 80px;
