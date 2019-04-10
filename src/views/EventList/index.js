@@ -1,11 +1,13 @@
 // Libraries
 import React, { Component } from 'react'
+import classNames from 'classnames'
 
 // Componentsç
 import API from 'API'
 import EventCard from 'components/EventCard'
 import styles from './eventlist.module.scss'
 import SearchInput from 'components/SearchInput'
+import Button from 'components/Button'
 
 class EventListView extends Component {
   state = {
@@ -38,6 +40,9 @@ class EventListView extends Component {
       <section className={styles.eventlist}>
         <h1 className='text-center'>Eventos</h1>
         <SearchInput onChange={this.handleSearch} id='event-list-search' />
+        <div className={classNames(styles.new_event, 'margin-bottom-small')}>
+          <Button>Nuevo evento</Button>
+        </div>
         { isLoading && <h3>Espera un momento...</h3> }
         <ul className={styles.list}>
           {
